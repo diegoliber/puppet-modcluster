@@ -7,8 +7,7 @@ class modcluster(
   $download_url = undef,
 ) {
 
-  #improve
-  $file_name = 'modcluster.tar.gz'
+  $file_name = inline_template('<%= require \'uri\'; File.basename(URI::parse(@download_url).path) %>')
 
   wget::fetch { "Download modcluster ${download_url}":
     source      => $download_url,
