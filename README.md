@@ -1,6 +1,6 @@
 ## Puppet modcluster module
 
-Installs modcluster in an existing apache installation
+Installs modcluster into an existing apache/httpd
 
 Uses puppetlabs-apache
 
