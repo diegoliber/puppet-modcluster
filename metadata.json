@@ -1,1 +1,95 @@
-{}
+{
+  "author": "Jairo Junior",
+  "dependencies": [
+    {
+      "name": "puppetlabs/stdlib",
+      "version_requirement": ">= 3.2.0"
+    },
+    {
+      "name": "maestrodev/wget",
+      "version_requirement": ">=1.4.4"
+    },
+   {
+      "name": "puppetlabs/apache",
+      "version_requirement": ">=1.4.0"
+    }
+  ],
+  "license": "Apache-2.0",
+  "name": "jairojunior/modcluster",
+  "project_page": "https://github.com/jairojunior/puppet-modcluster",
+  "source": "https://github.com/jairojunior/puppet-modcluster",
+  "summary": "Modcluster Puppet Module",
+  "version": "0.9.0",
+  "tags": [
+    "apache",
+    "modcluster",
+    "mod_cluster",
+    "mod-cluster"
+  ],
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "RedHat",
+      "operatingsystemrelease": [
+        "4",
+        "5",
+        "6",
+        "7"
+      ]
+    },
+    {
+      "operatingsystem": "CentOS",
+      "operatingsystemrelease": [
+        "4",
+        "5",
+        "6",
+        "7"
+      ]
+    },
+    {
+      "operatingsystem": "OracleLinux",
+      "operatingsystemrelease": [
+        "4",
+        "5",
+        "6"
+      ]
+    },
+    {
+      "operatingsystem": "Scientific",
+      "operatingsystemrelease": [
+        "4",
+        "5",
+        "6"
+      ]
+    },
+    {
+      "operatingsystem": "SLES",
+      "operatingsystemrelease": [
+        "11 SP1"
+      ]
+    },
+    {
+      "operatingsystem": "Debian",
+      "operatingsystemrelease": [
+        "6",
+        "7"
+      ]
+    },
+    {
+      "operatingsystem": "Ubuntu",
+      "operatingsystemrelease": [
+        "10.04",
+        "12.04"
+      ]
+    }
+  ],
+  "requirements": [
+    {
+      "name": "pe",
+      "version_requirement": ">=2.7.20"
+    },
+    {
+      "name": "puppet",
+      "version_requirement": ">=2.7.20"
+    }
+  ]
+}
