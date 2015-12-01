@@ -1,8 +1,8 @@
-LoadModule proxy_module modules/mod_proxy.so
-LoadModule slotmem_module modules/mod_slotmem.so
-LoadModule manager_module modules/mod_manager.so
-LoadModule proxy_cluster_module modules/mod_proxy_cluster.so
-LoadModule advertise_module modules/mod_advertise.so
+<% if scope.lookupvar("modcluster::params::load_module_file") == :undef %>
+<%= scope.function_template('modcluster.load.erb') %>
+<% end %>
+
+MemManagerFile <%= @mem_manager_file %>
 
 Listen <%= @listen_ip_address %>:<%= @port %>
 <VirtualHost <%= @listen_ip_address %>:<%= @port %>>

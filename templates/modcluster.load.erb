@@ -1,0 +1,9 @@
+LoadModule proxy_module <%= @modules_dir %>/mod_proxy.so
+<% if @version =~ /1\.[0-2]\..+/ %>
+LoadModule slotmem_module <%= @modules_dir %>/mod_slotmem.so
+<% else %>
+LoadModule cluster_slotmem_module <%= @modules_dir %>/mod_cluster_slotmem.so
+<% end %>
+LoadModule manager_module <%= @modules_dir %>/mod_manager.so
+LoadModule proxy_cluster_module <%= @modules_dir %>/mod_proxy_cluster.so
+LoadModule advertise_module <%= @modules_dir %>/mod_advertise.so
